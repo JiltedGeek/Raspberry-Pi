@@ -1,0 +1,17 @@
+Updating RaspberryOS
+
+from the command prompt (and if you booted into the graphical user interface (GIU) start a terminal window) type the following command en press enter.
+
+  sudo apt-get update -y && sudo apt-get upgrade -y
+
+This will update all the latest software locations and also install the newest versions of the already installed software (dependencies).
+
+When the installation is done (this can take a while) make sure to reboot your Pi before moving on to the next step.
+
+  sudo reboot now
+
+The next step is optional and is only needed if your Pi isn’t brand new to start with. It updates the Pi’s firmware (the software on the Pi itself, not on the SD card).
+
+  sudo rpi-update
+
+When this is finished be sure to reboot again, so that the new firmware is active and your Pi feels brand new.
